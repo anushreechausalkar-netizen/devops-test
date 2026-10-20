@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test-and-verify:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,8 +19,6 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
-      name: Run automated test suit
-      run: npm test
 
     - name: Run automated test suite
       run: npm test
